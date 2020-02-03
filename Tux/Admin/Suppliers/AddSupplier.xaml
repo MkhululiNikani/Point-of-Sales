@@ -1,0 +1,192 @@
+﻿<Page x:Class="Tux.AddSupplier"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tux"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Height="550" Background="#f2f2f2"
+        Width="869"
+      Title="AddSupplier">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="359*"/>
+            <ColumnDefinition Width="511*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"  Name="CompanyName"
+            materialDesign:HintAssist.Hint="Company Name" Grid.ColumnSpan="2" Margin="20,28,489,0" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap" Name="Phone"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Phone Number" Margin="20,137,489,0" Grid.ColumnSpan="2" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap" Name="Email"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Email Address" Margin="21,245,490,0" RenderTransformOrigin="0.501,0.717" Grid.ColumnSpan="2" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True" Name="Country"
+            TextWrapping="Wrap" 
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Country" Margin="20,350,491,0" Grid.ColumnSpan="2" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"  Name="Address"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Address" Margin="132,28,20,0" Grid.Column="1" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True" Name="City"
+            TextWrapping="Wrap" 
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="City" Margin="129,136,21,0" Grid.Column="1" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap" Name="PostalCode"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Postal Code" Margin="131,244,19,0" Grid.Column="1" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"  Name="Region"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Region" Margin="132,351,20,0" Grid.Column="1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+    Style="{StaticResource MaterialDesignRaisedLightButton}"
+    Width="100" Background="#e36a6a" BorderBrush="#e36a6a"
+            Grid.Column="1" Margin="236,481,174,27" Height="Auto" Click="Cancel">
+            CANCEL
+        </Button>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}"
+            Width="100" Background="#e36a6a" BorderBrush="#e36a6a"
+            Grid.Column="1" Margin="375,480,35,28" Content="ADD" Height="Auto" 
+            RenderTransformOrigin="0.46,0.143" Click="AddSupplierToDatabase"/>
+
+    </Grid>
+</Page>

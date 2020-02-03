@@ -1,0 +1,179 @@
+﻿<Page x:Class="Tux.AddEmployee"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tux"
+      mc:Ignorable="d" d:DesignWidth="800"
+      Height="550" Background="#f2f2f2"
+      Width="869"
+      Title="AddEmployee">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="359*"/>
+            <ColumnDefinition Width="511*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"  Name="LastName"
+            materialDesign:HintAssist.Hint="Lastname" Grid.ColumnSpan="2" Margin="20,28,489,0" Height="63" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap" Name="FirstName"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Firstname" Margin="23,120,486,0" Grid.ColumnSpan="2" Height="63" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap" Name="Title"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Title" Margin="21,213,490,0" 
+            RenderTransformOrigin="0.501,0.717" Grid.ColumnSpan="2" Height="60" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True" Name="IDNO"
+            TextWrapping="Wrap" 
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="ID Number" Margin="20,318,491,0" Grid.ColumnSpan="2" Height="57" />
+
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True" Name="Password"
+            TextWrapping="Wrap" 
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Password" Margin="18,416,493,0" Grid.ColumnSpan="2" Height="57" />
+
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"  Name="Address"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Home Address" Margin="132,28,20,0" Grid.Column="1" Height="59" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True" Name="ReportsTo"
+            TextWrapping="Wrap" 
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Reports To" Margin="132,119,18,0" Grid.Column="1" Height="61" />
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap" Name="PositionID"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="PositionID" Margin="131,212,19,0" Grid.Column="1" Height="60" />
+
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"  Name="Email"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Email" Margin="131,317,21,0" Grid.Column="1" Height="57" />
+
+
+        <TextBox
+            Style="{StaticResource MaterialDesignFilledTextFieldTextBox}"
+            VerticalAlignment="Top"
+            AcceptsReturn="True"
+            TextWrapping="Wrap"  Name="Username"
+            MaxWidth="400"
+            materialDesign:HintAssist.Hint="Username" Margin="133,412,19,0" Grid.Column="1" Height="57" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Background="#e36a6a" BorderBrush="#e36a6a"
+            ToolTip="Resource name: MaterialDesignRaisedLightButton"
+                    Grid.Column="1" Margin="138,498,263,9" 
+                    Height="Auto" Click="Cancel">
+            CANCEL
+        </Button>
+        <Button
+            Style="{StaticResource MaterialDesignRaisedLightButton}" Background="#e36a6a" BorderBrush="#e36a6a"
+            Grid.Column="1" Margin="372,498,20,9" Content="ADD"
+            Height="Auto" RenderTransformOrigin="0.46,0.143" Click="AddEmployeeToDatabase"/>
+    </Grid>
+</Page>

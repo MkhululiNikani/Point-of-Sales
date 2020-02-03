@@ -1,0 +1,72 @@
+﻿<Page x:Class="Tux.CashierLogin"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Tux"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CashierLogin"
+       Height="550" 
+        Width="869"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        FontFamily="{DynamicResource MaterialDesignFont}" 
+        Visibility="Visible" 
+        Background="#FFF">
+
+    <Grid>
+
+        <Grid Background="#63b5a2" Margin="0,0,540,0">
+
+            <Image
+              Source="/img/brian.png"
+               Margin="32,34,20,158" />
+            <Button
+                Style="{StaticResource MaterialDesignRaisedButton}" 
+                Margin="50,388,42,108" Height="Auto" FontSize="20"
+                Background="#d85353" BorderBrush="#e36a6a"
+                Content="Login as Admin" Click="LoginAsAdminClick"/>
+        </Grid>
+        <Grid Background="#fff" Margin="329,0,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="206"/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Label Content="Cashier" HorizontalAlignment="Left"
+                   Margin="137,20,0,0" VerticalAlignment="Top"
+                   FontSize="50"
+                   FontWeight="DemiBold"
+                   Height="66" Width="193" Background="White" Foreground="#FF58AF9B" Grid.ColumnSpan="2"/>
+
+
+            <Label Content="username or password incorrect" HorizontalAlignment="Left"
+                   Margin="112,152,0,0" VerticalAlignment="Top" Name="Error" Opacity="0"
+                   FontSize="18" FontWeight="Normal" Height="33" Width="279" Foreground="#e36a6a" Grid.ColumnSpan="2"/>
+
+
+            <TextBox Style="{DynamicResource MaterialDesignFilledTextFieldTextBox}" Focusable="True"
+                     Margin="72,198,75,294" materialDesign:HintAssist.Hint="Username"
+                     Name="Username" Grid.ColumnSpan="2" GotFocus="clearError"/>
+            <PasswordBox Style="{DynamicResource MaterialDesignFilledPasswordFieldPasswordBox}"  
+                        Margin="73,281,74,208" materialDesign:HintAssist.Hint="Password"
+                        FontSize="16" Name="Password" Grid.ColumnSpan="2" GotFocus="clearError"/>
+
+            <Button
+            Style="{StaticResource MaterialDesignRaisedButton}"  FontSize="30"
+                Margin="72,385,73,107" Height="Auto" Background="#63b5a2"
+                Click="Login" BorderBrush="#63b5a2" Grid.ColumnSpan="2">
+                Login
+            </Button>
+
+        </Grid>
+
+        <materialDesign:PackIcon Kind="WindowClose" Height="26" 
+                                 Width="28" Margin="823,16,0,0" 
+                                 MouseUp="CloseApp"/>
+    </Grid>
+</Page>

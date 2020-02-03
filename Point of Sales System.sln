@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.352
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tux POS", "Tux\Tux POS.csproj", "{B2540771-7CC7-4B61-B65A-341E308675FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Models", "POSModels\Models.csproj", "{7FB73067-F2F7-4F9A-B83A-B0ED13BFC230}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controller", "POSDataAccess\Controller.csproj", "{FABB328F-8AEC-4759-ADF0-15A60A8FEE35}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2540771-7CC7-4B61-B65A-341E308675FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2540771-7CC7-4B61-B65A-341E308675FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2540771-7CC7-4B61-B65A-341E308675FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2540771-7CC7-4B61-B65A-341E308675FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FB73067-F2F7-4F9A-B83A-B0ED13BFC230}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB73067-F2F7-4F9A-B83A-B0ED13BFC230}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB73067-F2F7-4F9A-B83A-B0ED13BFC230}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB73067-F2F7-4F9A-B83A-B0ED13BFC230}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABB328F-8AEC-4759-ADF0-15A60A8FEE35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABB328F-8AEC-4759-ADF0-15A60A8FEE35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABB328F-8AEC-4759-ADF0-15A60A8FEE35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABB328F-8AEC-4759-ADF0-15A60A8FEE35}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46CA5DC2-C8CA-4392-8EE7-CC7D55FC9EA9}
+	EndGlobalSection
+EndGlobal
