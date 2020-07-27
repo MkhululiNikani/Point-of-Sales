@@ -282,8 +282,8 @@ namespace POSDataAccess
             smtpClient.DeliveryMethod = SmtpDeliveryMethod.Network;
             smtpClient.Credentials = new NetworkCredential()
             {
-                UserName = "mkhululinikani@gmail.com",
-                Password = "121029537808355937270736375700"
+                UserName = "email@example.com",
+                Password = "yourpassword"
             };
             smtpClient.EnableSsl = true;
             {
